@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    word-wrap: break-word;
 }
 
 body {
@@ -10,7 +11,7 @@ body {
     font: 12px Arial, Verdana, Tahoma, sans-serif;
     line-height: 17px;
     background: url(paveiksleliai/fonas.png) repeat-x top;
-    background-color: #E6E6E6;
+    background-color: #68563d;
 }
 
 .clear {
@@ -18,12 +19,12 @@ body {
 }
 
 a, a:visited {
-    color: #7f786e;
+    color: #68563d;
     text-decoration: none;
 }
 
 a:hover {
-    color: #f69d4e;
+    color: #e69e17;
     text-decoration: underline;
 }
 
@@ -48,7 +49,7 @@ a:hover {
 
 .sonas {
     float: right;
-    background: #f69d4e;
+    background: #e69e17;
     height: 51px;
     width: 2px;
 }
@@ -56,16 +57,16 @@ a:hover {
 .sonas2 {
     margin-top: 5px;
     float: right;
-    background: #f69d4e;
+    background: #e69e17;
     height: 89px;
     width: 2px;
 }
 
 /* Meniu juosta*/
 #meniu_juosta {
-    border-right: 2px solid #f69d4e;
+    border-right: 2px solid #e69e17;
     width: 708px;
-    background: #e6e6e6 url(paveiksleliai/meniu.png) repeat-x;
+    background: #493313 url(paveiksleliai/meniu.png) repeat-x;
     float: left;
     font-family: Arial, Verdana, Tahoma, sans-serif;
     font-size: 14px;
@@ -96,18 +97,17 @@ a:hover {
 }
 
 #meniu_juosta ul li a:hover, #meniu_juosta ul li .active {
-    text-shadow: #e6e6e6 1px 0px 0px;
-    border: 1px solid #e6e6e6;
+    text-shadow: #493313 1px 0px 0px;
     padding-top: 2px;
-    padding-bottom: 15px;
-    background: #e6e6e6 url(paveiksleliai/hover.png) repeat-x;
-    color: #7f786e;
+    padding-bottom: 7px;
+    background: #8e7046 url(paveiksleliai/hover.png) repeat-x;
+    color: #fff;
 }
 
 #kunas {
     height: 100%;
     margin-top: 20px;
-    background: #E6E6E6;
+    background: #68563d;
     float: left;
     width: 710px;
 }
@@ -132,9 +132,9 @@ a:hover {
 }
 
 #kaire .vidus {
-    text-shadow: #f8f8f8 1px 0px 0px;
-    border: 1px solid #f8f8f8;
-    background: #f8f8f8 url(paveiksleliai/bloko_fonas.png) repeat-x;
+    text-shadow: #f4f3f3 1px 0px 0px;
+    border: 1px solid #f4f3f3;
+    background: #f4f3f3 url(paveiksleliai/bloko_fonas.png) repeat-x;
 }
 
 #centras {
@@ -146,9 +146,9 @@ a:hover {
 }
 
 #centras .vidus {
-    text-shadow: #f8f8f8 1px 0px 0px;
-    border: 1px solid #f8f8f8;
-    background: #f8f8f8 url(paveiksleliai/bloko_fonas.png) repeat-x;
+    text-shadow: #f4f3f3 1px 0px 0px;
+    border: 1px solid #f4f3f3;
+    background: #f4f3f3 url(paveiksleliai/bloko_fonas.png) repeat-x;
 }
 
 #centras .pavadinimas {
@@ -211,9 +211,9 @@ a:hover {
 }
 
 #desine .vidus {
-    text-shadow: #f8f8f8 1px 0px 0px;
-    border: 1px solid #f8f8f8;
-    background: #f8f8f8 url(paveiksleliai/bloko_fonas.png) repeat-x;
+    text-shadow: #f4f3f3 1px 0px 0px;
+    border: 1px solid #f4f3f3;
+    background: #f4f3f3 url(paveiksleliai/bloko_fonas.png) repeat-x;
 }
 
 .text {
@@ -223,13 +223,13 @@ a:hover {
 #kojos {
     clear: both;
     height: 80px;
-    border: 2px solid #7f786e;
-    background: url(paveiksleliai/kojos.png) repeat-x;
+    border: 2px solid #cccccc;
+    background: #68563d url(paveiksleliai/kojos.png) repeat-x;
     border-bottom: 0;
 }
 
 #kojos .tekstas {
-    color: #7f786e;
+    color: #cccccc;
     font-family: Arial, Verdana, Tahoma, sans-serif;
     font-size: 14px;
     font-weight: bold;
@@ -238,6 +238,9 @@ a:hover {
     width: 300px;
     margin-top: 20px;
     margin-left: 20px;
+}
+#kojos .tekstas a{
+    color: #cccccc;
 }
 
 #kojos .logo {
@@ -262,7 +265,7 @@ a:hover {
 
 #another .taisom {
     width: 706px;
-    background: #E6E6E6;
+    background: #68563d;
     margin-left: 101px;
     height: 2px;
 }
@@ -287,9 +290,9 @@ input, textarea, button, select {
     outline: none;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 11px;
-    color: #6b655c;
-    background: #f8f8f8;
-    border: 1px solid #6b655c;
+    color: #5d5141;
+    background: #cabfb0;
+    border: 1px solid #5d5141;
     padding-left: 5px;
 }
 
@@ -304,9 +307,9 @@ input, button, select {
 input[type="submit"], .submit, .perveiza {
     cursor: pointer;
     padding: 2px;
-    background: #e6e6e6 url(paveiksleliai/hover.png) repeat-x;
-    border: 1px solid #6b655c;
-    color: #6b655c;
+    background: #493313 url(paveiksleliai/hover.png) repeat-x;
+    border: 1px solid #ccc;
+    color: #fff;
 }
 
 button {
@@ -323,12 +326,12 @@ button {
 }
 
 textarea.input {
-    width: 95%;
-    background: #f8f8f8;
+    width: 90%;
+    background: #cccccc;
 }
 
-input.input {
-    width: 95%;
+select, input.input {
+    width: 90%;
 }
 
 /*Bloko meniu*/
@@ -346,7 +349,7 @@ input.input {
 
 #navigation ul li a {
     display: block;
-    border-bottom: 1px solid #f2f2f2;
+    border-bottom: 1px solid #d2ccc3;
     padding: 5px 0px 2px 4px;
     text-decoration: none;
     color: #666666;
@@ -355,14 +358,14 @@ input.input {
 
 #navigation ul li:hover, #navigation ul li .active {
     color: #000000;
-    background-color: #f2f2f2;
+    background-color: #d2ccc3;
     position: relative;
 }
 
 /*Sub Meniu*/
 #navigation ul ul {
     border: 0px;
-    background: #f8f8f8 url(paveiksleliai/bloko_fonas.png) repeat-x;
+    background: #cccccc url(paveiksleliai/bloko_fonas.png) repeat-x;
     display: none;
     position: absolute;
     left: 188px;
@@ -379,7 +382,7 @@ input.input {
     display: block;
     padding: 0px 0px 2px 4px;
     text-decoration: none;
-    color: #666666;
+    color: #cccccc;
     width: 188px;
 }
 
@@ -409,8 +412,8 @@ input.input {
     text-align: center;
     float: left;
     cursor: pointer;
-    background: #f2f2f2;
-    border: 1px solid #ccc;
+    background: #d2ccc3;
+    border: 1px solid #a88b62;
     padding: 3px;
     margin: 3px;
     height: auto;
@@ -445,10 +448,10 @@ div.blokas img:hover {
 a.btn {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    float: left;
+    /*float: left;*/
     cursor: pointer;
-    background: #f2f2f2;
-    border: 1px solid #CCCCCC;
+    background: #d2ccc3;
+    border: 1px solid #a88b62;
     padding: 3px;
     margin: 3px;
     font-weight: bold;
@@ -486,7 +489,7 @@ a.btn:active, a.btn:hover {
 
 .tr2 {
     padding: 5px;
-    background: #e5e5e5 url(paveiksleliai/hover.png) repeat-x;
+    background: #d2ccc3;
     vertical-align: middle;
     overflow: hidden
 }
@@ -515,29 +518,30 @@ table tr td {
 
 /* Kalendoriui */
 .kalendorius table tr td {
-    border-bottom: 1px dashed #d6d6d6;
+    border-bottom: 1px dashed #d2ccc3;
     text-align: center;
 }
 
 .kalendorius .siandien {
-    background: #d6d6d6;
+    background: #d2ccc3;
     font-weight: bold;
     color: #fff
 }
 
 /* Linija, po naujiena, straipsniu, siuntiniu ir t.t */
 .line {
-    border-top: 1px dashed #d6d6d6;
+    border-top: 1px dashed #d2ccc3;
     margin: 5px
 }
 
 /* Title lentel� i�okanti pel� u�vedus ant nuorodos su pavadinimu (title="") */
 .tooltip {
+    max-width: 300px;
     padding: 3px;
-    border: 1px solid #000;
+    border: 1px solid #fff;
     display: none;
-    background: #d6d6d6;
-    color: #000;
+    background: #78531f;
+    color: #fff;
     font: 11px Arial, Helvetica, sans-serif;
     text-align: left;
     position: absolute;
@@ -606,8 +610,8 @@ table tr td {
 .kat img {
     height: 40px;
     width: 40px;
-    background: #fff;
-    border: 1px solid #ccc;
+    background: #d2ccc3;
+    border: 1px solid #a88b62;
     display: block;
     margin: 2px;
     padding: 2px;
@@ -618,8 +622,8 @@ table tr td {
 .forum_img {
     max-width: 400px;
     max-height: 400px;
-    background: #fff;
-    border: 1px solid #ccc;
+    background: #d2ccc3;
+    border: 1px solid #a88b62;
     display: block;
     margin: 2px;
     padding: 2px;
@@ -632,7 +636,7 @@ table tr td {
 
 /* Puslapiavimui */
 .puslapiavimas {
-    text-shadow: 0px 0px 0px;
+    text-shadow: none;
     text-align: center;
 }
 
@@ -643,7 +647,7 @@ table tr td {
 
 .puslapiavimas .nuoroda {
     vertical-align: middle;
-    background: #f2f2f2;
+    background: #d2ccc3;
     padding: 2px;
     padding-left: 7px;
     padding-right: 7px;
@@ -668,7 +672,7 @@ a.siust {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     cursor: pointer;
-    background: #f2f2f2;
+    background: #d2ccc3;
     border: 1px solid #CCCCCC;
     padding: 3px;
     margin: 3px;
@@ -706,7 +710,7 @@ a.siust {
 
 /* Apsaugos kodui */
 #captcha {
-    background: #f8f8f8;
+    background: #cccccc;
 }
 
 /* Reitingavimas */
@@ -727,8 +731,8 @@ a.siust {
     text-align: center;
     float: left;
     padding: 5px;
-    background: #f2f2f2;
-    border: 1px solid #ccc;
+    background: #d2ccc3;
+    border: 1px solid #a88b62;
     width: 133px;
     height: 140px;
     margin: 5px;
