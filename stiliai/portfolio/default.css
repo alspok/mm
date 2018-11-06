@@ -484,4 +484,66 @@ a.siust {
     font-size: 10px;
 }
 
-/* Mightmedia pagrindin?s stiliaus funkcijos */
+/* Mightmedia pagrindin�s stiliaus funkcijos */
+img {
+    border: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+hr, fieldset {
+    margin: 2px;
+    border: 1px dotted #CCC;
+}
+
+input, textarea, button, select {
+    outline: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #5d5141;
+    background: #cabfb0;
+    border: 1px solid #5d5141;
+    padding-left: 5px;
+}
+
+.editorius {
+    width: 370px;
+}
+
+input, button, select {
+    height: 20px
+}
+
+input[type="submit"], .submit, .perveiza {
+    cursor: pointer;
+    padding: 2px;
+    background: #493313 url(paveiksleliai/hover.png) repeat-x;
+    border: 1px solid #ccc;
+    color: #fff;
+}
+
+button {
+    cursor: pointer;
+    padding: 2px;
+}
+
+/* BB Kodo [code] forume laukas */
+.code {
+    margin: 10px;
+    height: auto;
+    width: 95%;
+    background: #ccc;
+}
+
+textarea.input {
+    width: 90%;
+    background: #cccccc;
+}
+
+select, input.input {
+    width: 90%;
+}
