@@ -13,6 +13,36 @@
 		<link rel="stylesheet" href="stiliai/<?php echo input(strip_tags($conf['Stilius'])); ?>/css/style-desktop.css" />
     </head>
     <body>
+
+   		<div id="main">
+			<div class="container">
+				<div class="row"> 
+					
+					<!-- Content -->
+					<div id="content" class="8u skel-cell-important">
+						<section>
+							<?php
+                            if ( isset( $strError ) && !empty( $strError ) ) {
+                                klaida( "Klaida", $strError );
+                            }
+
+                            include("priedai/centro_blokai.php");
+                            include($page . ".php");
+                        	?>
+						</section>
+					</div>
+					
+                        <?php
+                            include("priedai/desines_blokai.php");
+                            include("priedai/kaires_blokai.php");
+                        ?>
+                		</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+    
     <a id='section1'></a>
         <section class='section1'>
             <div class='container-fluid w3-container' style='padding-bottom: 30%'>
@@ -55,6 +85,8 @@
             </div>
         </section>
         
+        
+
         <a id='section2'></a>
         <section class='section2 flex height-400'>
             <div class='container-fluid'>
@@ -184,6 +216,10 @@
             </div>
             <div class='container11' style='align-content:center; font-size: 8px; padding-left:7%'>Copyright: My Website 2018</div>
         </section>
-        <br><br><br>
+        <div id="copyright">
+			<div class="container">
+				Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
+			</div>
+		</div>
     </body>
 </html>

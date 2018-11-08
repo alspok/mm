@@ -52,6 +52,18 @@ function lentele_c( $pavadinimas, $tekstas, $n_nuoroda, $kom_kiekis = FALSE, $da
 //Jei naudosim kalbystę ištraukiam $lang, jei ne ištrinam.
 	global $lang, $page;
 //Tvarkome skaitymo nuorodas
+
+?>
+<section>
+	<header>
+		<h2>
+			<a href="<?php echo $n_nuoroda; ?>"><?php echo $pavadinimas; ?></a>
+		</h2>
+	</header>
+	<?php echo $reitingai . $tekstas; ?>
+</section>
+<?php
+
 //$kom_kiekis - komentarų skaičius, $n_nuoroda - nuoroda skaitymui
 	$data = date( 'Y-m-d', $datai );
 //Naujienų
@@ -81,6 +93,17 @@ function lentele( $pavadinimas, $tekstas, $reitingai = FALSE ) {
     <div class='vidus'>
 	<div class='text'>{$reitingai}{$tekstas}</div>
 	</div>";
+
+?>
+    <section>
+        <header>
+            <h2>
+                <?php echo $pavadinimas; ?>
+            </h2>
+        </header>
+        <?php echo $reitingai . $tekstas; ?>
+    </section>
+<?php
 }
 
 //Atvaizduojame klaidos pranešimą
