@@ -17,7 +17,6 @@
    		<div id="main">
 			<div class="container">
 				<div class="row"> 
-					
 					<!-- Content -->
 					<div id="content" class="8u skel-cell-important">
 						<section>
@@ -31,7 +30,6 @@
                         	?>
 						</section>
 					</div>
-					
                         <?php
                             include("priedai/desines_blokai.php");
                             include("priedai/kaires_blokai.php");
