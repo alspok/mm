@@ -8,13 +8,49 @@
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
         <?php header_info(); ?>
+        <link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="stiliai/<?php echo input(strip_tags($conf['Stilius'])); ?>/css/skel-noscript.css" />
 		<link rel="stylesheet" href="stiliai/<?php echo input(strip_tags($conf['Stilius'])); ?>/css/style.css" />
 		<link rel="stylesheet" href="stiliai/<?php echo input(strip_tags($conf['Stilius'])); ?>/css/style-desktop.css" />
     </head>
     <body>
 
-   		<div id="main">
+    <div id="header">
+			<div class="container"> 
+				
+				<!-- Logo -->
+				<div id="logo">
+					<h1><a href="<?php echo adresas(); ?>"><?php echo $conf['Pavadinimas']; ?></a></h1>
+					<span><?php echo $conf['Apie']; ?></span>
+				</div>
+				
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<!-- <li class="active"><a href="index.html">Homepage</a></li>
+						<li><a href="left-sidebar.html">Left Sidebar</a></li>
+						<li><a href="right-sidebar.html">Right Sidebar</a></li>
+						<li><a href="no-sidebar.html">No Sidebar</a></li> -->
+						<?php
+                            $limit = 6; //Kiek nuorodų rodome
+                            $menuSql  = mysql_query1( "SELECT * FROM `" . LENTELES_PRIESAGA . "page` WHERE `parent` = 0 AND `show` = 'Y' AND `lang` = " . escape(lang()) . " ORDER BY `place` ASC LIMIT " . $limit );
+                        ?>
+                        <?php foreach ($menuSql as $menuRow) { ?>
+                            <?php if (teises( $menuRow['teises'], $_SESSION[SLAPTAS]['level'])){ ?>
+                                <li>
+                                    <a href="<?php echo url('?id,' . (int)$menuRow['id']); ?>">
+                                        <?php echo input($menuRow['pavadinimas']); ?>
+                                    </a>
+                                </li>
+                            <?php } ?>
+                        <?php } ?>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+
+    <div id="main">
 			<div class="container">
 				<div class="row"> 
 					<!-- Content -->
